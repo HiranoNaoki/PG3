@@ -2,28 +2,47 @@
 #include<windows.h>
 
 
+typedef void (*PFunc)(int*);
 
-int Recursive(int n) {
-	if (n<= 1)
-	{
-		return 100;
+void DispResult(int* s) {
+	printf("%d秒待って実行されたよ\n", *s);
 
-	}
-	return ( Recursive(n-1)*2-50);
+}
+
+void setTimeout(PFunc p, int second) {
+	Sleep(second * 1000);
+
+	p(&second);
 }
 
 int main() {
 	
+	int dice;
+	int n;
 
+	printf("サイコロふる\n");
 
-	
-	int result;
+	srand((unsigned int)time(NULL));
 
-	for (int n = 1; n < 10; n++)
-	{
-		result = Recursive(n);
-		printf("%d時間後の給料　= %d\n", n, result);
+	dice = rand() % 6 + 1;
+
+	printf("半か丁か\n");
+	printf("1が半、2が丁\n");
+
+	scanf_s("%d", &n);
+
+	setTimeout(DispResult, 3);
+
+	if ((dice == 1 && n == 2) || (dice == 2 && n == 1) || (dice == 3 && n == 2) || (dice == 4 && n == 1) || (dice == 5 && n == 2) || (dice == 6 && n == 1)) {
+
+		printf("不整脈\n");
 	}
+	else
+	{
+		printf("正常\n");
+	}
+
 	
+
 	return 0;
 }
