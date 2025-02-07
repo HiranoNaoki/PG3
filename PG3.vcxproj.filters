@@ -35,10 +35,10 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Users\naoki\Downloads\pg3_0204\Circle.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Users\naoki\Downloads\pg3_0204\main.cpp">
+    <ClCompile Include="..\..\Users\naoki\Downloads\pg3_0204\Circle.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Users\naoki\Downloads\pg3_0204\Rectangle.cpp">
