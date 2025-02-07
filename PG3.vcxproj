@@ -128,13 +128,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="..\..\Users\naoki\Downloads\pg3_0204\Circle.h" />
+    <ClInclude Include="..\..\Users\naoki\Downloads\pg3_0204\IShape.h" />
+    <ClInclude Include="..\..\Users\naoki\Downloads\pg3_0204\Rectangle.h" />
     <ClInclude Include="Animal.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Template.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Users\naoki\Downloads\pg3_0204\Circle.cpp" />
+    <ClCompile Include="..\..\Users\naoki\Downloads\pg3_0204\main.cpp" />
+    <ClCompile Include="..\..\Users\naoki\Downloads\pg3_0204\Rectangle.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
