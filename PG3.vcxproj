@@ -137,8 +137,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Users\naoki\Downloads\pg3_0204\Circle.cpp" />
-    <ClCompile Include="..\..\Users\naoki\Downloads\pg3_0204\main.cpp" />
     <ClCompile Include="..\..\Users\naoki\Downloads\pg3_0204\Rectangle.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
